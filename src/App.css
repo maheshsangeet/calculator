@@ -74,13 +74,13 @@ button:hover {
 @media (max-width:600px) {
     .container {
         width: 85%;
-        height: 98vh;
+        height: 94vh;
         border: 0;
         background-color: black;
         border-radius: 0;
     }
     input[type='text'] {
-        height: 20vh;
+        height: 34vh;
         width: 90%;
         background-color: black;
         border: 0;
@@ -89,7 +89,20 @@ button:hover {
         font-size: 50px;
         font-weight: 900;   
         letter-spacing: 2px;
-        background-color: red;
+    }
+    .keypad {
+        grid-gap: 10px;
+    }
+    button {
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #333333; 
+        color: #ffff;
+        font-weight: 500;
+        font-size: 30px;
+        border: none;
+        transition: filter 0.3s ease-in;  
     }
     
   }
