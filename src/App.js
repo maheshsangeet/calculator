@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './App.css'
+import image from "../src/assets/menu.png";
 
 function App() {
   const [result, setResult] = useState('')
 
+  let today = new Date();
+  let time = today.getHours() + ":" + today.getMinutes();
+  const [ctime, setCtime] = useState(time);
+
+  const updateTime = () => {
+    time = new Date().toLocaleTimeString();
+    setCtime(time);
+  }
+  setInterval(updateTime,1000);
+
   const clear = () => {
     setResult('')
   }
-  // const backspace = () => {
-  //   setResult(result.slice(0,-1))
-  // }
   
   const sign = () => {
     setResult((result * (-1)))
@@ -34,6 +42,11 @@ function App() {
   return (
     <>
       <div className= "container">
+      <div className="time">{time}</div>
+      <div className="menu">
+          <img src={image} />
+        </div>
+
         <form>
           <input type="text" value={result} />
         </form>
