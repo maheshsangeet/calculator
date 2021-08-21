@@ -3,7 +3,8 @@
 ## Live Preview: [Open Link](https://maheshsangeet.github.io/calculator/)
 
 
-![Screenshot from 2021-08-20 14-15-04](https://user-images.githubusercontent.com/74812363/130207276-ba33fd2a-5f94-463e-8275-41d271dbf06d.png)
+![Screenshot from 2021-08-21 13-04-54](https://user-images.githubusercontent.com/74812363/130314553-3180d834-59ae-45d1-9289-b64bb581f1b8.png)
+
 
 
 
