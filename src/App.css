@@ -16,7 +16,7 @@ body {
 .keypad {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 12px;
+    grid-gap: 10px;
 
 }
 input[type='text'] {
@@ -39,7 +39,7 @@ input[type='text'] {
     
 }
 button {
-    height: 70px;
+    height: 65px;
     border-radius: 50%;
     cursor: pointer;
     background-color: #333333; 
@@ -63,15 +63,16 @@ button:hover {
 .time {
     color: white;
     text-align: left;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .menu {
     position: absolute;
     top: 25px;
     right: 10px;
-
 }
-
+.menu img {
+    height: 15px;
+}
 @media (max-width:600px) {
     .container {
         width: 85%;
