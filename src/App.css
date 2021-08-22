@@ -6,7 +6,7 @@ body {
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
-    width: 380px;
+    width: 300px;
     text-align: center;
     border: 10px solid rgb(173, 164, 164);
     background-color: black;
@@ -16,12 +16,12 @@ body {
 .keypad {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
+    grid-gap: 12px;
 
 }
 input[type='text'] {
     height: 200px;
-    width: 350px;
+    width: 300px;
     background-color: black;
     border: 0;
     color: blanchedalmond;
@@ -39,15 +39,16 @@ input[type='text'] {
     
 }
 button {
-    height: 80px;
+    height: 70px;
     border-radius: 50%;
     cursor: pointer;
     background-color: #333333; 
     color: #ffff;
     font-weight: 500;
     font-size: 30px;
-    border: none;
-    transition: filter 0.3s ease-in;  
+    border: 0;
+    transition: filter 0.3s ease-in;
+    outline: 0;  
 }
 button:hover {
   filter: brightness(130%);
@@ -94,7 +95,7 @@ button:hover {
         grid-gap: 10px;
     }
     button {
-        height: 70px;
+        height: 90px;
         border-radius: 50%;
         cursor: pointer;
         background-color: #333333; 
@@ -103,6 +104,7 @@ button:hover {
         font-size: 30px;
         border: none;
         transition: filter 0.3s ease-in;  
+        
     }
     
   }
